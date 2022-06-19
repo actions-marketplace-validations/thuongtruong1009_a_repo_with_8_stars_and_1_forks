@@ -1,20 +1,15 @@
 name: "Auto name"
 description: "Rename this repo with stars and forks number"
+author: thuongtruong1009
+branding:
+  icon: 'activity'
+  color: 'purple'
 inputs:
   github_token:
     description: ${{ secrets.GITHUBTOKEN }}
     required: true
   actor:
     description: thuongtruong1009
-    required: true
-  icon:
-    description: 'activity'
-  color:
-    description: purple
-  label:
-    description: 'GitHub'
-  repository:
-    description: thuongtruong1009/a_repo_with_0_stars_and_0_forks
 outputs: {}
 runs:
   using: "node12"
